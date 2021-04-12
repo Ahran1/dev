@@ -7,13 +7,11 @@ public class homework_1018 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		scanner.useDelimiter("[:\n]");
+		scanner.useDelimiter("[:\r\n]");
 		int h = scanner.nextInt();
 		int m = scanner.nextInt();
-		System.out.println(h);
-		System.out.println(m);
+		System.out.println(h+":"+m);
 		scanner.close();
 		
 	}
-
 }
