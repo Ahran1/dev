@@ -8,7 +8,7 @@ public class homework_1012 {
 
 		Scanner scanner = new Scanner(System.in);
 		float n = scanner.nextFloat();
-		System.out.println(n);
+		System.out.printf("%f", n);
 		scanner.close();
 		
 	}

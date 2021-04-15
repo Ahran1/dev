@@ -8,7 +8,7 @@ public class homework_1017 {
 
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
-		System.out.println(a + " " + a + " " + a);
+		System.out.printf("%d %d %d", a, a, a);
 		scanner.close();
 	}
 
