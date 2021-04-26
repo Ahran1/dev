@@ -1,15 +1,16 @@
-package homework2;
+package homework4;
 
 import java.util.Scanner;
 
-public class homework_1011 {
+public class homework_1035 {
 
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		char a = scanner.next().charAt(0);
-		System.out.printf("%d", a);
+		int n = scanner.nextInt(16);
 		scanner.close();
+		
+		System.out.printf("%o", n);
 		
 	}
 
