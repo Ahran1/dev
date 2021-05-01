@@ -1,19 +1,16 @@
-package homework3;
+package homework4;
 
 import java.util.Scanner;
 
-public class homework_1034 {
+public class homework_1028 {
 
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt(8);
-		scanner.close();
 		
+		long n = scanner.nextLong();
 		System.out.printf("%d", n);
-		
-		
-		
+		scanner.close();
 	}
 
 }

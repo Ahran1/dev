@@ -8,7 +8,6 @@ public class homework_1024 {
 
 		Scanner scanner = new Scanner(System.in);
 		String abc = scanner.next();
-		for(i=0; abc)
 		char a = abc.charAt(0);
 		char b = abc.charAt(1);
 		char c = abc.charAt(2);
