@@ -7,10 +7,10 @@ public class homework_1038 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		long a = scanner.nextLong();
-		long b = scanner.nextLong();
+		int a = scanner.nextInt();
+		int b = scanner.nextInt();
 		scanner.close();
-		System.out.printf("%d", a + b);
+		System.out.printf("%d", (long)a + b);
 	}
 
 }
