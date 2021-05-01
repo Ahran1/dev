@@ -9,7 +9,7 @@ public class homework_1053 {
 		Scanner scanner = new Scanner(System.in);
 
 		boolean a = scanner.nextInt() != 0 ;
-		System.out.printf("%d", a == true ? 0 : 1);
+		System.out.printf("%d", !a ? 1 : 0);
 		
 		scanner.close();
 	}
