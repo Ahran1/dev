@@ -8,11 +8,11 @@ public class homework_1057 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
-		
-		System.out.printf("%d", a == b ? 1 : 0);
-		
+		boolean a = scanner.nextInt() == 1;
+		boolean b = scanner.nextInt() == 1;
+
+		System.out.printf("%d", a ^ b ? 1 : 0);
+
 		scanner.close();
 	}
 

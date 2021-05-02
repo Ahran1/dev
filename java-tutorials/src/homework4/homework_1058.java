@@ -8,10 +8,10 @@ public class homework_1058 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
+		boolean a = scanner.nextInt() == 1;
+		boolean b = scanner.nextInt() == 1;
 
-		System.out.printf("%d", (a == 0) && (b == 0) ? 1 : 0);
+		System.out.printf("%d", !a && !b ? 1 : 0);
 
 		scanner.close();
 	}
