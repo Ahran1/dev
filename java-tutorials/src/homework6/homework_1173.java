@@ -15,8 +15,6 @@ public class homework_1173 {
 		int t = 60 * h + m - 30;
 		if (t < 0) {
 			t = 60 * 24 + t;
-		} else {
-
 		}
 		System.out.printf("%d %d", t / 60, t % 60);
 
