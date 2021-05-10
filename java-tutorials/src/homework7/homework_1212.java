@@ -12,33 +12,11 @@ public class homework_1212 {
 		int c = scanner.nextInt();
 		scanner.close();
 
-		if (a == b && b == c) {
+		int max = a > b ? (a > c ? a : c) : (b > c ? b : c);
+		if (max < a + b + c - max) {
 			System.out.println("yes");
 		} else {
-			if (a >= b && a >= c) {
-				if (a < b + c) {
-					System.out.println("yes");
-				} else {
-					System.out.println("no");
-				}
-			}
-
-			if (b >= c && b >= a) {
-				if (b < c + a) {
-					System.out.println("yes");
-				} else {
-					System.out.println("no");
-				}
-			}
-
-			if (c >= a && c >= b) {
-				if (c < a + b) {
-					System.out.println("yes");
-				} else {
-					System.out.println("no");
-				}
-			}
-
+			System.out.println("no");
 		}
 
 	}
