@@ -13,15 +13,9 @@ public class homework_1091 {
 		int d = scanner.nextInt();
 		int n = scanner.nextInt();
 		scanner.close();
-		
-		long answer = 1;
-		if (n == 1) {
-			answer = a;
-		} else {
-			answer = a * m + d;
 
-		}
-		for (int i = 2; i <= n - 1; i++) {
+		long answer = a;
+		for (int i = 1; i < n; i++) {
 			answer = answer * m + d;
 		}
 		System.out.println(answer);
