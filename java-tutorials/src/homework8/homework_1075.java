@@ -10,9 +10,8 @@ public class homework_1075 {
 
 		int n = scanner.nextInt();
 		while (n >= 1) {
-			System.out.println(n-1);
-			n--;
-		}
+			System.out.println(--n);
+			}
 
 	}
 }
