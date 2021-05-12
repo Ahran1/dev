@@ -2,17 +2,17 @@ package homework8;
 
 import java.util.Scanner;
 
-public class homework_1079 {
+public class homework_1072 {
 
 	public static void main(String[] args) {
-
 		Scanner scanner = new Scanner(System.in);
-		char c = 'a';
-		while (c != 'q') {
-			c = scanner.next().charAt(0);
-			System.out.println(c);
+		int n = scanner.nextInt();
+		for (int i = 1; i <= n; i++) {
+			int x = scanner.nextInt();
+			System.out.println(x);
 		}
 		scanner.close();
+
 	}
 
 }

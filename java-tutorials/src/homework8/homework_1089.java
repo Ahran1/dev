@@ -12,7 +12,9 @@ public class homework_1089 {
 		int d = scanner.nextInt();
 		int n = scanner.nextInt();
 		scanner.close();
-		int answer = a + d * (n - 1);
-		System.out.println(answer);
+		for (int i = 1; i < n; i++) {
+			a += d;
+		}
+		System.out.println(a);
 	}
 }

@@ -8,12 +8,14 @@ public class homework_1090 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		int a = scanner.nextInt();
+		long a = scanner.nextInt();
 		int r = scanner.nextInt();
 		int n = scanner.nextInt();
 		scanner.close();
-		double answer = a * Math.pow(r, n - 1);
-		System.out.printf("%.0f", answer);
+		for (int i = 1; i < n; i++) {
+			a *= r;
+		}
+		System.out.println(a);
 
 	}
 }

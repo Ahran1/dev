@@ -10,13 +10,18 @@ public class homework_1080 {
 
 		int n = scanner.nextInt();
 		scanner.close();
-		int sum = 0;
+//		int sum = 0;
+//		int i = 0;
+//		while (sum < n) {
+//			sum += i;
+//			i++;
+//		}
+//		System.out.println(i - 1);
+
 		int i = 0;
-		while (sum < n) {
+		for (int sum = 0; sum < n; i++) {
 			sum += i;
-			i++;
 		}
 		System.out.println(i - 1);
-
 	}
 }
