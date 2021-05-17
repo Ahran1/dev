@@ -10,26 +10,32 @@ public class homework_1285 {
 		String expression = scanner.next();
 		scanner.close();
 
-		String[] split = expression.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)");
+		Scanner sc = new Scanner(expression);
+		sc.useDelimiter("[+\\Q-\\E*/=]");
 
-		int cal = Integer.parseInt(split[0]);
-		for (int i = 1, j = 2; i < split.length && j < split.length; i += 2, j += 2) {
-
-			if (split[i] == "+") {
-				cal = cal + Integer.parseInt(split[j]);
-			} else if (split[i] == "-") {
-				cal = cal - Integer.parseInt(split[j]);
-			} else if (split[i] == "*") {
-				cal = cal * Integer.parseInt(split[j]);
-			} else if (split[i] == "/") {
-				cal = cal / Integer.parseInt(split[j]);
+		int num, result = sc.nextInt();
+		char ch;
+		for (int i = 0; (ch = expression.charAt(i)) != '='; i++) {
+			if (ch < '0' || ch > '9') {
+				num = sc.nextInt();
+				switch (ch) {
+				case '+':
+					result += num;
+					break;
+				case '-':
+					result -= num;
+					break;
+				case '*':
+					result *= num;
+					break;
+				case '/':
+					result /= num;
+					break;
+				}
 			}
-
-			if (split[i] == "=") {
-				break;
-			}
-
 		}
-		System.out.println(cal);
+		System.out.println(result);
+		sc.close();
+
 	}
 }

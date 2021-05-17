@@ -9,45 +9,23 @@ public class homework_1284 {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		scanner.close();
-		int i = 2;
-		int prime1 = 3, prime2 = 3;
-		int count = 0;
-
-		while (i <= n) {
+		int a = 0;
+		for (int i = 2; i < n; i++) {
 			if (n % i == 0) {
-				for (int a = 1; a <= i; a++) {
-					if (i % a == 0) {
-						count++;
-					}
-				}
-				if (count == 2) {
-					prime1 = i;
-					break;
-				}
-
+				a = i;
+				break;
 			}
-			i++;
 		}
-		i = prime1 + 1;
-		while (i <= n) {
-			if (n % i == 0) {
-				for (int a = 1; a <= i; a++) {
-					if (i % a == 0) {
-						count++;
-					}
-				}
-				if (count == 4) {
-					prime2 = i;
-				}
-
+		for (int i = 2; a != 0 && i < n / a; i++) {
+			if (n / a % i == 0) {
+				a = 0;
+				break;
 			}
-			i++;
 		}
-
-		if (prime1 * prime2 == n) {
-			System.out.println(prime1 + " " + prime2);
-		} else {
+		if (a == 0) {
 			System.out.println("wrong number");
+		} else {
+			System.out.printf("%d %d", a, n / a);
 		}
 
 	}

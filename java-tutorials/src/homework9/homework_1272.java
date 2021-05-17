@@ -10,25 +10,19 @@ public class homework_1272 {
 		int k = scanner.nextInt();
 		int h = scanner.nextInt();
 		scanner.close();
-		int c1 = 0;
-		int c2 = 0;
+		int sum = 0, num;
 
-		for (int i = 1; i <= k; i++) {
+		for (int i = 1; i <= k || i <= h; i++) {
 			if (i % 2 == 1) {
-				c1 = i / 2 + 1;
+				num = i / 2 + 1;
 			} else {
-				c1 = i / 2 * 10;
+				num = i / 2 * 10;
+			}
+			if (i == k || i == h) {
+				sum += num;
 			}
 		}
-		for (int i = 1; i <= h; i++) {
-			if (i % 2 == 1) {
-				c2 = i / 2 + 1;
-			} else {
-				c2 = i / 2 * 10;
-			}
-		}
-
-		System.out.println(c1 + c2);
+		System.out.println(sum);
 	}
 
 }

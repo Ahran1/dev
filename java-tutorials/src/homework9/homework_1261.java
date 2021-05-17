@@ -8,15 +8,18 @@ public class homework_1261 {
 
 		Scanner scanner = new Scanner(System.in);
 		int n = 0;
+		boolean flag = true;
 		for (int i = 1; i <= 10; i++) {
 			n = scanner.nextInt();
 			if (n % 5 == 0) {
 				System.out.println(n);
+				flag = false;
 				break;
 			}
-
 		}
-		System.out.println(0);
+		if (flag) {
+			System.out.println(0);
+		}
 
 		scanner.close();
 

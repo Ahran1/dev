@@ -14,9 +14,6 @@ public class homework_1275 {
 		int value = 1;
 		int i = 1;
 		
-		if (k == 0) {
-			value = 1;
-		}
 		while (i <= k) {
 			value *= n;
 			i++;

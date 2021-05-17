@@ -10,19 +10,12 @@ public class homework_1282 {
 		int n = scanner.nextInt();
 		scanner.close();
 
-		int t = 1, k = 0;
-		double i = n;
-
-		for (i = n; i >= 1; i--) {
-			double sqr = Math.sqrt(i);
-			if (Math.round(sqr) == sqr) {
-				t = (int) sqr;
-				break;
-			}
-			k++;
+		int t = 1;
+		while (t * t < n) {
+			t++;
 		}
-		System.out.printf("%d %d", k, t);
-
+		t--;
+		System.out.printf("%d %d", n - t * t, t);
 	}
 
 }
