@@ -6,16 +6,17 @@ public class Homework_1565 {
 
 	static int a, b;
 
+	static int gcd(int p, int q) {
+		if (p == 0)
+			return q;
+		return gcd(q % p, p);
+	}
+
 	static long lcm(int a, int b) {
-		int bg = (a >= b ? a : b);
-		int sm = (a >= b ? b : a);
-		int i = 1;
-
-		while ((long) (bg * i) % sm != 0) {
-			i++;
-		}
-
-		return (long) bg * i;
+		int g = gcd(a, b);
+		a = a / g;
+		b = b / g;
+		return (long) a * b * g;
 	}
 
 	public static void main(String[] args) {
